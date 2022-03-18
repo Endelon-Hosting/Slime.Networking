@@ -258,7 +258,7 @@ namespace Slime.Networking
         {
             var tabs = "";
 
-            for (int i = 0; i <= Tabs; i++)
+            for (int i = 0; i < Tabs; i++)
             {
                 tabs += "    ";
             }
