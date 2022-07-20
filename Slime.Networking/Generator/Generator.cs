@@ -360,7 +360,7 @@ namespace Slime.Networking
         {
             var res = input.Replace("packet_", "");
 
-            res = res.Substring(0, 1).ToUpper() + res.Substring(1, res.Length - 1);
+            res = res[..1].ToUpper() + res[1..];
 
             while (res.Contains("_"))
             {
